@@ -21,6 +21,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.compose.material.MaterialTheme
 import androidx.coordinatorlayout.widget.CoordinatorLayout
 import androidx.core.app.ShareCompat
 import androidx.core.widget.NestedScrollView
@@ -59,6 +60,11 @@ class PlantDetailFragment : Fragment() {
             container,
             false
         ).apply {
+            composeView.setContent {
+                MaterialTheme {
+                    PlantDetailDescription()
+                }
+            }
             viewModel = plantDetailViewModel
             lifecycleOwner = viewLifecycleOwner
             callback = object : Callback {
