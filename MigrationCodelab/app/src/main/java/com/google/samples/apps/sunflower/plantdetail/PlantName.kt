@@ -10,6 +10,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.tooling.preview.Preview
+import com.google.accompanist.themeadapter.material.MdcTheme
 import com.google.samples.apps.sunflower.R
 
 @Composable
@@ -30,7 +31,7 @@ fun PlantName(
 @Preview
 @Composable
 private fun PlantNamePreview() {
-    MaterialTheme {
+    MdcTheme {
         PlantName(title = "Jasmin")
     }
 }
