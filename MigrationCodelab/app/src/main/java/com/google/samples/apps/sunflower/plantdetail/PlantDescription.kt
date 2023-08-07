@@ -11,7 +11,7 @@ import androidx.core.text.HtmlCompat
 
 
 @Composable
-private fun PlantDescription(description: String) {
+fun PlantDescription(description: String) {
     val htmlDescription = remember(description) {
         HtmlCompat.fromHtml(description, HtmlCompat.FROM_HTML_MODE_COMPACT)
     }
