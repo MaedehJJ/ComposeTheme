@@ -49,7 +49,7 @@ fun ReplyEmailThreadItem(
         modifier = modifier
             .fillMaxWidth()
             .padding(20.dp)
-            .background(MaterialTheme.colorScheme.background)
+            .background(MaterialTheme.colorScheme.background, MaterialTheme.shapes.medium)
             .padding(16.dp)
     ) {
         Row(modifier = Modifier.fillMaxWidth()) {
